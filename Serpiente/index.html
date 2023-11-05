@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1></h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="gameOverMessage">HAS PERDIDO :(</div>
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Restart</button>
+           
+<div id="score">Score: 0</div>
+
+<div id="countdown" style="font-family: 'Press Start 2P', cursive; font-size: 48px; display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #FFD700;"></div>
+
+<div id="pauseMessage" style="display: none;">PAUSA</div>
+
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

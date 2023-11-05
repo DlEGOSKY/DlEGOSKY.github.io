@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Juego de Memoria</h1>
+            <p>Movimientos: <span id="moveCounter">0</span></p>
+            <p>Tiempo: <span id="timer">00:00</span></p>
+        </div>
+
+        <div class="controls">
+            <select id="difficulty">
+                <option value="8">Fácil (8 tarjetas)</option>
+                <option value="12">Medio (12 tarjetas)</option>
+                <option value="16">Difícil (16 tarjetas)</option>
+            </select>
+            <button class="start-button" onclick="startGame()">Iniciar Juego</button>
+        </div>
+
+        
+
+
+        <div class="gameboard">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

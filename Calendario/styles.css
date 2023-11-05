@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.calendario {
+    background-color: #444;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dias-semana {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.dias-semana div {
+    width: calc(100% / 7);
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dia {
+    background-color: #666;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dia:hover {
+    background-color: #777;
+}
+
+.dia:contains("Domingo") {
+    background-color: #FFCCCC;
+}
+
+.calendario, button, h2, .dias-semana div, .dia {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.domingo {
+    background-color: #6f9467; 
+}

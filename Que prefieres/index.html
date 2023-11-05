@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>¿Qué prefieres?</title>
+</head>
+
+<body>
+    <header>
+        <h1>¿Qué prefieres?</h1>
+        <h3 id="questionCounter">Pregunta 1 de 120</h3>
+
+    </header>
+    <main>
+        <p id="question"></p>
+        <div class="options">
+            <div class="option" id="option1" onclick="selectOption(1)"></div>
+            <div class="option" id="option2" onclick="selectOption(2)"></div>
+        </div>
+
+        <div id="statsContainer" style="display: none;">
+          <h2>¡Gracias por jugar!</h2>
+          <canvas id="resultsChart" width="400" height="200"></canvas>
+          <p id="majorityStat"></p>
+          <p id="minorityStat"></p>
+          <p id="difficultStat"></p>
+          <p id="totalTimeStat"></p>
+          <p id="fastestQuestionStat"></p>
+
+          
+          <p id="streakStat"></p>
+
+<!-- mostrar estadísticas globales -->
+          <h2>Estadísticas Globales</h2>
+          <p id="globalStats"></p>
+
+      </div>
+      
+      
+      
+
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+
+</html>

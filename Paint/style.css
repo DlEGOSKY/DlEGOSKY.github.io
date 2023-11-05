@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display
+
+  : flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#paintCanvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: border 0.3s;
+}
+
+#paintCanvas:hover {
+    border-color: #555;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tool {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tool:hover {
+    color: #555;
+}
+
+#brushSize {
+    width: 100px;
+}
+
+.save-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #f4f4f9;
+}
+
+.confirmation-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
